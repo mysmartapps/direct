@@ -3,7 +3,7 @@
 
 import math, sys, time, os, re, logging
 from mechanize import Browser
-from BeautifulSoup import BeautifulSoup1
+from BeautifulSoup import BeautifulSoup
 
 LOGIN_URL = 'https://passport.yandex.ru/'
 DIRECT_URL = 'https://direct.yandex.ru/'
@@ -24,12 +24,6 @@ def readLogin(n):
                          'password' : pswd}
 
     return uloginandpassword
-
-def test():
-    param = readLogin(1)
-    userlogin = param['login']
-    userpassword = param['password']
-    print 'Login-> %s Password-> %s' % (userlogin, userpassword)
 
 def yaLogin(usernum):
 

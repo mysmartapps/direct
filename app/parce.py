@@ -3,7 +3,7 @@
 
 import math, sys, time, os, re, logging
 from mechanize import Browser
-from BeautifulSoup import BeautifulSoup
+from BeautifulSoup import BeautifulSoup1
 
 LOGIN_URL = 'https://passport.yandex.ru/'
 DIRECT_URL = 'https://direct.yandex.ru/'
